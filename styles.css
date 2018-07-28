@@ -6,11 +6,10 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1fr 7fr;
   grid-template-rows: auto;
   margin: 3em 7em;
 }
-
 
 /*SIDEBAR NAVIGATION STYLING*/
 /*Column 1 of wrapper grid*/
@@ -33,11 +32,11 @@ nav {
 }
 
 h5 {
-  margin: 0.5em 1em;
+  margin: 0.25em 0;
 }
 
 i {
-  margin-right: 1em;
+  margin-left: 1.25em;
 }
 
 .nav-box {
@@ -48,7 +47,6 @@ i {
 
 .user-profile {
   align-items: center;
-  /*border-bottom: 3px solid #323A49;*/
   display: flex;
   flex-direction: column;
   grid-row: 1/2;
@@ -65,19 +63,92 @@ i {
 }
 
 .fa-angle-down {
+  margin-left: 0.5em;
+}
 
+.main-nav,
+.admin-nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3em repeat(5, 2.5em);
+  justify-content: center;
 }
 
 .main-nav {
   grid-row: 2/3;
 }
 
-.fa-home {
-
+.nav-p {
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
-.fa-briefcase {
+.fa-home,
+.fa-user-friends,
+.fa-check-square {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
 
+.home-nav,
+.users-nav,
+.admin-check {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.fa-briefcase,
+.fa-map-marker-alt,
+.fa-stop-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.jobs-nav,
+.locations-nav,
+.design-check {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.fa-file-alt,
+.fa-sitemap,
+.fa-stop-2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.resumes-nav,
+.workflows-nav,
+.exec-check {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.fa-clipboard-list,
+.fa-paste,
+.fa-stop-3 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.tasks-nav,
+.boards-nav,
+.hr-check{
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.fa-calendar-alt,
+.fa-slideshare {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.calendar-nav,
+.social-nav {
+  grid-column: 2/3;
+  grid-row: 6/7;
 }
 
 .admin-nav {
@@ -87,4 +158,40 @@ i {
 .categories-nav {
   grid-row: 4/5;
 }
+
+/*.cat-p {
+
+}*/
+
+/*.fa-check-square {
+
+}*/
+
+/*.admin-check {
+
+}*/
+
+/*.fa-stop-1 {
+
+}*/
+
+/*.design-check {
+
+}*/
+
+/*.fa-stop-2 {
+
+}*/
+
+/*.exec-check {
+
+}*/
+
+/*.fa-stop-3 {
+
+}*/
+
+/*.hr-check {
+
+}*/
 
