@@ -173,12 +173,19 @@ i {
   grid-row: 4/5;
 }
 
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4em 3fr auto;
+}
+
 /*USER INTERACTIVE NAVIGATION STYLING*/
 .alt-nav {
   background-color: #FFF;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+  grid-row: 1/2;
 }
 
 .alt-nav-box {
@@ -191,7 +198,8 @@ i {
 .user-add-nav:hover,
 .cal-add-nav:hover,
 .waffle-nav:hover {
-  
+  background-color: #48A3F3;
+  color: white;
 }
 
 .menu-nav {
@@ -207,7 +215,7 @@ i {
 }
 
 .search-nav {
-  grid-column: 2/3
+  grid-column: 2/3;
 }
 
 .fa-search,
@@ -231,6 +239,103 @@ i {
 
 .waffle-nav {
   grid-column: 5/6;
+}
+
+/*JOB STATUS NAVIGATION STYLING*/
+.job-status {
+  background-color: #FFF;
+  display: grid;
+  grid-row: 2/3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.job-status-box {
+  display: flex;
+}
+
+.job-title-location {
+
+}
+
+.open-button {
+  font-size: 1em;
+  height: 2em;
+  width: 6em;
+}
+
+.button-dot {
+  color: #99C354;
+  height: .5em;
+  width: .5em;
+}
+
+.fa-bookmark,
+.fa-pencil-alt,
+.fa-trash-alt {
+  border: 1px solid #D3DAE1;
+  border-radius: 2em;
+  height: 1em;
+  padding: 1em;
+}
+
+.job-content {
+  background-color: #ECF1F5;
+  grid-row: 3/4;
+}
+
+.job-circle-graphs {
+
+}
+
+.circle-graph-1 {
+
+}
+
+.circle-graph-2 {
+
+}
+
+.circle-graph-3 {
+
+}
+
+.circular-chart {
+  background-image: url(images/circle-regular.svg);
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-stroke-1 {
+  stroke: #67B8BF;
+  fill: none;
+  stroke-width: 3.7;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circle-stroke-2 {
+  stroke: #48A3F3;
+  fill: none;
+  stroke-width: 3.7;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circle-stroke-3 {
+  stroke: #A46EAB;
+  fill: none;
+  stroke-width: 3.7;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
 }
 
 
