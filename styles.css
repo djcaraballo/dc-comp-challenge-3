@@ -301,6 +301,7 @@ main {
 }
 
 .circular-chart {
+  background-image: url(images/circle-regular.svg);
   display: block;
   margin: 10px auto;
   max-width: 80%;
@@ -310,7 +311,7 @@ main {
 .circle-stroke-1 {
   stroke: #67B8BF;
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 3.7;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
@@ -318,7 +319,7 @@ main {
 .circle-stroke-2 {
   stroke: #48A3F3;
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 3.7;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
@@ -326,7 +327,7 @@ main {
 .circle-stroke-3 {
   stroke: #A46EAB;
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 3.7;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
