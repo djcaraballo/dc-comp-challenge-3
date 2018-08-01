@@ -499,8 +499,16 @@ hr:after {
   display: grid;
   grid-column: 1/2;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 5em repeat(5, 3em) 9em 3em 3em;
+  grid-template-rows: 5em repeat(5, 5em) 9em 5em 5em;
   margin: 3em;
+}
+
+.job-summary-h {
+  margin: 1.5em;
+}
+
+.summ-p {
+  margin: 1em;
 }
 
 .summary-box-1-1 {
@@ -535,96 +543,145 @@ hr:after {
 }
 
 .summary-box-2-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 2/3;
   padding-left: 1em;
 }
 
 .summary-box-2-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .summary-box-3-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 3/4;
   padding-left: 1em;
 }
 
 .summary-box-3-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 3/4;
 }
 
 .summary-box-4-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 4/5;
   padding-left: 1em;
 }
 
 .summary-box-4-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 4/5;
 }
 
 .summary-box-5-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2; 
   grid-row: 5/6;
   padding-left: 1em;
 }
 
 .summary-box-5-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 5/6;
 }
 
 .summary-box-6-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 6/7;
   padding-left: 1em;
 }
 
 .summary-box-6-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 6/7;
 }
 
 .summary-box-7-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 7/8;
   padding-left: 1em;
 }
 
 .summary-box-7-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 7/8;
 }
 
 .summary-box-8-1 {
+  /*align-items: center;*/
+  border-bottom: 2px solid #EFF2F5;
+  display: flex;
   grid-column: 1/2;
   grid-row: 8/9;
   padding-left: 1em;
 }
 
 .summary-box-8-2 {
+  align-items: center;
+  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 8/9;
 }
 
 .mgr-info-container {
-  align-items: center;
+  /*align-items: center;*/
   display: flex;
+  margin-top: .5em;
+}
+
+.job-summ-p8 {
+  margin-top: .7em;
 }
 
 .summary-box-9-1 {
+  /*align-items: center;*/
+  /*border-bottom: 2px solid #EFF2F5;*/
+  display: flex;
   grid-column: 1/2;
   grid-row: 9/10;
   padding-left: 1em;
 }
 
 .summary-box-9-2 {
+  align-items: center;
+  /*border-bottom: 2px solid #EFF2F5;*/
   grid-column: 2/3;
   grid-row: 9/10;
+}
+
+.salary-h {
+  margin: 1rem;
 }
 
 .social-media-links {
@@ -636,7 +693,7 @@ hr:after {
   -moz-border-radius: 5em;
   border-radius: 5em;
   height: 3em;
-  margin-right: 1em;
+  margin-left: 1em;
   width: 3em;  
 }
 
