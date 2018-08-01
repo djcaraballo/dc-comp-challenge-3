@@ -122,8 +122,10 @@ i {
 .jobs-nav,
 .locations-nav,
 .design-check {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 3/4;
+  margin-left: 1em;
 }
 
 .fa-file-alt,
@@ -136,8 +138,10 @@ i {
 .resumes-nav,
 .workflows-nav,
 .exec-check {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 4/5;
+  margin-left: 1em;
 }
 
 .fa-clipboard-list,
@@ -150,8 +154,10 @@ i {
 .tasks-nav,
 .boards-nav,
 .hr-check{
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 5/6;
+  margin-left: 1em;
 }
 
 .fa-calendar-alt,
@@ -162,8 +168,10 @@ i {
 
 .calendar-nav,
 .social-nav {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 6/7;
+  margin-left: 1em;
 }
 
 .admin-nav {
@@ -172,6 +180,22 @@ i {
 
 .categories-nav {
   grid-row: 4/5;
+}
+
+.fa-check-square {
+  color: #F9D549;
+}
+
+.fa-stop-1 {
+  color: #53AEF8;
+}
+
+.fa-stop-2 {
+  color: #D73763;
+}
+
+.fa-stop-3 {
+  color: #4BA78C;
 }
 
 main {
@@ -255,12 +279,6 @@ main {
   grid-template-rows: 6em;
 }
 
-/*.job-status-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template: 2fr 1fr;
-}*/
-
 .job-title-location {
   display: grid;
   grid-column: 1/2;
@@ -316,6 +334,7 @@ main {
   background-color: #FFF;
   border: 1px solid #D3DAE1;
   border-radius: 1.5em;
+  color: #9CA3AE;
   display: flex;
   font-size: 1em;
   height: 1.75em;
@@ -335,6 +354,7 @@ main {
   -moz-border-radius: 1.5em;
   -webkit-border-radius: 1.5em;
   border: 1px solid #D3DAE1;
+  color: #9CA3AE;
   height: 1.75em;
   margin-left: 1em;
   padding: .5em;
@@ -375,6 +395,7 @@ main {
   cursor: pointer;
 }
 
+/*CIRCLE GRAPHS STYLING*/
 .job-circle-graphs {
   display: grid;
   grid-column: 1/2;
@@ -386,6 +407,12 @@ main {
   align-items: center;
   display: flex;
   grid-row: 1/2;
+  justify-content: center;
+}
+
+.circle-graphs-img {
+  height: 10em;
+  width: 30em;
 }
 
 .totals-button {
@@ -411,39 +438,7 @@ main {
   margin: .5rem
 }
 
-.circular-chart {
-  background-image: url(images/circle-regular.svg);
-  background-repeat: no-repeat;
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 10em;
-}
-
-.circle-stroke {
-  animation: progress 1s ease-out forwards;
-  fill: none;
-  stroke-linecap: round;
-  stroke-width: 3.7;
-}
-.circle-stroke-1 {
-  stroke: #67B8BF;
-}
-
-.circle-stroke-2 {
-  stroke: #48A3F3;
-}
-
-.circle-stroke-3 {
-  stroke: #A46EAB;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
+/*BAR GRAPH STYLING*/
 .bar-graph-container {
   align-items: center;
   display: flex;
@@ -478,6 +473,7 @@ hr:after {
   top: -13px;
 }
 
+/*JOB SUMMARY BOX STYLING*/
 .content-wrapper {
   display: grid;
   grid-auto-flow: row;
@@ -501,7 +497,7 @@ hr:after {
 }
 
 .summ-p {
-  color: #717b8A;
+  color: #717B8A;
   margin: 1em;
 }
 
@@ -668,6 +664,7 @@ hr:after {
 }
 
 .salary-h {
+  color: #717B8A;
   margin: 1rem;
 }
 
@@ -761,17 +758,18 @@ hr:after {
 
 .embed-link {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto;
 }
 
 .embed-link,
 .email-address {
   align-items: center;
+  background-color: #FFF;
   color: #717A89;
   display: flex;
   height: 3em;
-  width: 20em;
+  width: 18.9em;
 }
 
 .link,
@@ -787,7 +785,9 @@ hr:after {
   color: #FFF;
   font-size: .9em;
   grid-column: 2/3;
+  height: 1.4em;
   padding: 1em;
+  width: 3em;
 }
 
 
@@ -806,6 +806,77 @@ hr:after {
 
 .job-upload-box {
   grid-row: 4/5;
+}
+
+/*MEDIA QUERIES*/
+@media(max-width: 1320px) {
+  .job-summ-p7 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .facebook-box, 
+  .twitter-box, 
+  .linkedin-box {
+    height: 3em;
+    width: 18em;
+}
+
+@media(max-width: 1265px) {
+  .circle-graphs-img {
+    height: 9em;
+    width: 27em;
+  }
+
+  .job-circle-graphs {
+    grid-template-rows: 11.5em 3em;
+  }
+
+  .bar-graph {
+    height: 13em;
+    width: 23em;
+  }
+
+  .tot-btn-container {
+    height: 1.5em;
+  }
+
+  .link, 
+  .script-tag {
+    padding: 1em .5em;
+  }
+
+  .embed-link, .email-address {
+    width: 18em;
+  }
+}
+
+@media(max-width: 1185px) {
+  .user-name {
+    font-size: .85em;
+  }
+
+  .stats-nav-h {
+    margin-left: 2.5rem;
+  }
+
+  .job-summary {
+    margin: 1em;
+  }
+
+  .contact-container {
+    margin-top: 1em;
+  }
+
+  .facebook-box, 
+  .twitter-box, 
+  .linkedin-box {
+    width: 17em;
+  }
+
+  .embed-link, .email-address {
+    font-size: .75em;
+  }
 }
 
 
