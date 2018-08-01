@@ -495,70 +495,135 @@ hr:after {
 }
 
 .job-summary {
+  background-color: #FFF;
   display: grid;
   grid-column: 1/2;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(6, 3em) 9em 3em 3em;
-
+  grid-template-rows: 5em repeat(5, 3em) 9em 3em 3em;
+  margin: 3em;
 }
 
-.job-summ-h1 {
+.summary-box-1-1 {
+  align-items: center;
+  background-color: #717D93;
+  display: flex;
   grid-column: 1/2;
+  grid-row: 1/2;
+  padding-left: 1em;
+}
+
+.summary-box-1-2 {
+  align-items: center;
+  background-color: #717D93;
+  display: flex;
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 
 .edit-button {
-  grid-column: 2/3;
-  grid-row: 1/2;
+  background-color: #7F8CA4;
+  border: 2px solid #7F8CA4;
+  color: #FFF;
+  display: flex;
+  height: 2em;
+  width: 5em;
 }
 
-.job-summ-h2 {
+.edit-icon {
+  border: none;
+  margin-left: 0;
+}
+
+.summary-box-2-1 {
   grid-column: 1/2;
+  grid-row: 2/3;
+  padding-left: 1em;
+}
+
+.summary-box-2-2 {
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 
-.job-summ-p2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.job-summ-h3 {
+.summary-box-3-1 {
   grid-column: 1/2;
   grid-row: 3/4;
+  padding-left: 1em;
 }
 
-.job-summ-p3 {
+.summary-box-3-2 {
   grid-column: 2/3;
   grid-row: 3/4;
 }
 
-.job-summ-h4 {
-  grid-column: 
+.summary-box-4-1 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  padding-left: 1em;
+}
+
+.summary-box-4-2 {
+  grid-column: 2/3;
   grid-row: 4/5;
 }
 
-.job-summ-h5 {
-  grid-column: 
+.summary-box-5-1 {
+  grid-column: 1/2; 
+  grid-row: 5/6;
+  padding-left: 1em;
+}
+
+.summary-box-5-2 {
+  grid-column: 2/3;
   grid-row: 5/6;
 }
 
-.job-summ-h6 {
-  grid-column: 
+.summary-box-6-1 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  padding-left: 1em;
+}
+
+.summary-box-6-2 {
+  grid-column: 2/3;
   grid-row: 6/7;
 }
 
-.job-summ-h7 {
-  grid-column: 
+.summary-box-7-1 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  padding-left: 1em;
+}
+
+.summary-box-7-2 {
+  grid-column: 2/3;
   grid-row: 7/8;
 }
 
-.job-summ-h8 {
-  grid-column: 
+.summary-box-8-1 {
+  grid-column: 1/2;
+  grid-row: 8/9;
+  padding-left: 1em;
+}
+
+.summary-box-8-2 {
+  grid-column: 2/3;
   grid-row: 8/9;
 }
 
-.job-summ-h9 {
-  grid-column: 
+.mgr-info-container {
+  align-items: center;
+  display: flex;
+}
+
+.summary-box-9-1 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+  padding-left: 1em;
+}
+
+.summary-box-9-2 {
+  grid-column: 2/3;
   grid-row: 9/10;
 }
 
@@ -570,9 +635,9 @@ hr:after {
   -webkit-border-radius: 5em;
   -moz-border-radius: 5em;
   border-radius: 5em;
-  height: 5em;
-  margin: 1em;
-  width: 5em;  
+  height: 3em;
+  margin-right: 1em;
+  width: 3em;  
 }
 
 
