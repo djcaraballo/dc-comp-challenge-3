@@ -80,31 +80,34 @@
           <div class="job-status-container" role="container">
             <i class="fas fa-map-marker-alt space-dot"></i>
             <p class="location-p">San Francisco, CA</p>
-            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle space-circle"></i>
             <p class="preview-p">Preview this post</p>
           </div>
         </article>
         <article class="job-status-box job-status-buttons">
-          <button class="open-button"><i class="fas fa-circle button-dot"></i>Open</button>
+          <div class="open-button">
+            <i class="fas fa-circle button-dot"></i>
+            <h6>OPEN<h6>
+          </div>
           <i class="far fa-bookmark"></i>
           <i class="fas fa-pencil-alt"></i>
           <i class="fas fa-trash-alt"></i>
         </article>
-        <article class="job-status-box job-stats-nav">
-          <h6>SUMMARY</h6>
-          <h6>APPLICANTS</h6>
-          <h6>JOB BOARD</h6>
-          <h6>INTERVIEWS</h6>
-          <h6>ACTIVITY</h6>
-          <h6>BROADCAST</h6>
-          <h6>NOTIFICATIONS</h6>
-        </article>
       </section>
       
-      <section class="job-content">
+      <section class="job-stats-content">
+        <article class="job-status-box job-stats-nav">
+          <h5 class="stats-nav-start">SUMMARY</h5>
+          <h5 class="stats-nav-h">APPLICANTS</h5>
+          <h5 class="stats-nav-h">JOB BOARD</h5>
+          <h5 class="stats-nav-h">INTERVIEWS</h5>
+          <h5 class="stats-nav-h">ACTIVITY</h5>
+          <h5 class="stats-nav-h">BROADCAST</h5>
+          <h5 class="stats-nav-h">NOTIFICATIONS</h5>
+        </article>        
         <article class="job-circle-graphs">
           <svg viewbox="0 0 36 36" class="circular-chart circle-graph-1">
-            <path class="circle-stroke-1"
+            <path class="circle-stroke circle-stroke-1"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -115,7 +118,7 @@
             />
           </svg>
           <svg viewbox="0 0 36 36" class="circular-chart circle-graph-2">
-            <path class="circle-stroke-2"
+            <path class="circle-stroke circle-stroke-2"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -126,7 +129,7 @@
             />
           </svg>
           <svg viewbox="0 0 36 36" class="circular-chart circle-graph-3">
-            <path class="circle-stroke-3"
+            <path class="circle-stroke circle-stroke-3"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -140,7 +143,7 @@
 
 
         <article class="job-bar-graph">
-          <img src="images/Bar-graph.png">
+          <img src="images/Bar-graph.png" class="bar-graph">
         </article>
 
         <article class="totals-button">
@@ -152,82 +155,84 @@
         <hr><i class="fas fa-chevron-circle-up"></i><hr>
       </section>
         
-      <section class="job-summary">
-        <article class="summary-box-1">
-          <h6>JOB DESCRIPTION</h6>
-          <div class="edit-button">
-            <h6><i class="fas fa-pencil-alt"></i>EDIT</h6>
-          </div>
-        </article>
-        <article class="summary-box-2">
-          <h6>POSITION TITLE</h6>
-          <p>Customer Service Representative</p>
-        </article>
-        <article class="summary-box-3">
-          <h6>LOCATION</h6>
-          <p>San Francisco, CA</p>
-        </article>
-        <article class="summary-box-4">
-          <h6>EMPLOYMENT TYPE</h6>
-          <p>Full-time</p>
-        </article>
-        <article class="summary-box-5">
-          <h6>EXPERIENCE</h6>
-          <p>Mid-level</p>
-        </article>
-        <article class="summary-box-6">
-          <h6>STATUS</h6>
-          <p>Open</p>
-        </article>
-        <article class="summary-box-7">
-          <h6>DESCRIPTION</h6>
-          <p>The Customer Service Representative is responsible for interacting with and providing qualtiy assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
-        </article>
-        <article class="summary-box-8">
-          <h6>HIRING LEAD</h6>
-          <img src="images/man-headshot.jpg">
-          <p>Tom Tizzy</p>
-        </article>
-        <article class="summary-box-9">
-          <h6>APPROVED SALARY</h6>
-          <h6>$58,000</h6>
-        </article>        
-      </section>
+      <div class="content-wrapper">
+        <section class="job-summary">
+          <article class="summary-box-1">
+            <h6>JOB DESCRIPTION</h6>
+            <div class="edit-button">
+              <h6><i class="fas fa-pencil-alt"></i>EDIT</h6>
+            </div>
+          </article>
+          <article class="summary-box-2">
+            <h6>POSITION TITLE</h6>
+            <p>Customer Service Representative</p>
+          </article>
+          <article class="summary-box-3">
+            <h6>LOCATION</h6>
+            <p>San Francisco, CA</p>
+          </article>
+          <article class="summary-box-4">
+            <h6>EMPLOYMENT TYPE</h6>
+            <p>Full-time</p>
+          </article>
+          <article class="summary-box-5">
+            <h6>EXPERIENCE</h6>
+            <p>Mid-level</p>
+          </article>
+          <article class="summary-box-6">
+            <h6>STATUS</h6>
+            <p>Open</p>
+          </article>
+          <article class="summary-box-7">
+            <h6>DESCRIPTION</h6>
+            <p>The Customer Service Representative is responsible for interacting with and providing qualtiy assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+          </article>
+          <article class="summary-box-8">
+            <h6>HIRING LEAD</h6>
+            <img src="images/man-headshot.jpg" class="hiring-lead-image">
+            <p>Tom Tizzy</p>
+          </article>
+          <article class="summary-box-9">
+            <h6>APPROVED SALARY</h6>
+            <h6>$58,000</h6>
+          </article>        
+        </section>
 
-      <aside class="social-media-links">
-        <address class="facebook-box">
-          <h6><i class="fab fa-facebook-square"></i>Post to Facebook</h6>
-        </address>
-        <address class="twitter-box">
-          <h6><i class="fab fa-twitter-square"></i>Tweet this Job</h6>
-        </address>
-        <address class="linkedin-box">
-          <h6><i class="fab fa-linkedin"></i>Post to Linkedin</h6>
-        </address>
-        <address class="embed-job-box">
-          <h3><i class="fas fa-globe-americas"></i>Link to this Job</h3>
-          <p class="embed-p">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
-          <div class="embed-link">
-            <p class="link">http://loremipsum.dol/sit/amet...</p>
-            <p class="copy-p">Copy</p>
-          </div>
-        </address>
-        <address class="button-widget-box">
-          <h3><i class="fas fa-window-maximize"></i>Use the Button Widget</h3>
-          <p class="embed-p">This widget embeds the buttons for sharing the job and submitting a resume on your website.</p>
-          <div class="embed-link">
-            <p class="script-tag">&gt;script type="text/javascript"s...</p>
-            <p class="copy-p">Copy</p>
-          </div>
-        </address>
-        <address>
-          <h3><i class="fas fa-file-upload"></i>Upload Resumes by Email</h3>
-          <p class="embed-p">You can automatically upload multiple resumes to this job by emailing the address below.</p>
-          <div class="email-address">
-            <p>tomtizzy@gmail.com</p>
-          </div>
-        </address>
-      </aside>
+        <aside class="social-media-links">
+          <address class="facebook-box">
+            <h6><i class="fab fa-facebook-square"></i>Post to Facebook</h6>
+          </address>
+          <address class="twitter-box">
+            <h6><i class="fab fa-twitter-square"></i>Tweet this Job</h6>
+          </address>
+          <address class="linkedin-box">
+            <h6><i class="fab fa-linkedin"></i>Post to Linkedin</h6>
+          </address>
+          <address class="embed-job-box">
+            <h3><i class="fas fa-globe-americas"></i>Link to this Job</h3>
+            <p class="embed-p">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
+            <div class="embed-link">
+              <p class="link">http://loremipsum.dol/sit/amet...</p>
+              <p class="copy-p">Copy</p>
+            </div>
+          </address>
+          <address class="button-widget-box">
+            <h3><i class="fas fa-window-maximize"></i>Use the Button Widget</h3>
+            <p class="embed-p">This widget embeds the buttons for sharing the job and submitting a resume on your website.</p>
+            <div class="embed-link">
+              <p class="script-tag">&lt;script type="text/javascript"s...</p>
+              <p class="copy-p">Copy</p>
+            </div>
+          </address>
+          <address>
+            <h3><i class="fas fa-file-upload"></i>Upload Resumes by Email</h3>
+            <p class="embed-p">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <div class="email-address">
+              <p>tomtizzy@gmail.com</p>
+            </div>
+          </address>
+        </aside>
+      </div>
     </main>
   
   </div>
