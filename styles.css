@@ -122,8 +122,10 @@ i {
 .jobs-nav,
 .locations-nav,
 .design-check {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 3/4;
+  margin-left: 1em;
 }
 
 .fa-file-alt,
@@ -136,8 +138,10 @@ i {
 .resumes-nav,
 .workflows-nav,
 .exec-check {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 4/5;
+  margin-left: 1em;
 }
 
 .fa-clipboard-list,
@@ -150,8 +154,10 @@ i {
 .tasks-nav,
 .boards-nav,
 .hr-check{
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 5/6;
+  margin-left: 1em;
 }
 
 .fa-calendar-alt,
@@ -162,8 +168,10 @@ i {
 
 .calendar-nav,
 .social-nav {
+  font-size: .75em;
   grid-column: 2/3;
   grid-row: 6/7;
+  margin-left: 1em;
 }
 
 .admin-nav {
@@ -172,6 +180,22 @@ i {
 
 .categories-nav {
   grid-row: 4/5;
+}
+
+.fa-check-square {
+  color: #F9D549;
+}
+
+.fa-stop-1 {
+  color: #53AEF8;
+}
+
+.fa-stop-2 {
+  color: #D73763;
+}
+
+.fa-stop-3 {
+  color: #4BA78C;
 }
 
 main {
@@ -255,12 +279,6 @@ main {
   grid-template-rows: 6em;
 }
 
-/*.job-status-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template: 2fr 1fr;
-}*/
-
 .job-title-location {
   display: grid;
   grid-column: 1/2;
@@ -316,6 +334,7 @@ main {
   background-color: #FFF;
   border: 1px solid #D3DAE1;
   border-radius: 1.5em;
+  color: #9CA3AE;
   display: flex;
   font-size: 1em;
   height: 1.75em;
@@ -335,6 +354,7 @@ main {
   -moz-border-radius: 1.5em;
   -webkit-border-radius: 1.5em;
   border: 1px solid #D3DAE1;
+  color: #9CA3AE;
   height: 1.75em;
   margin-left: 1em;
   padding: .5em;
@@ -477,7 +497,7 @@ hr:after {
 }
 
 .summ-p {
-  color: #717b8A;
+  color: #717B8A;
   margin: 1em;
 }
 
@@ -644,6 +664,7 @@ hr:after {
 }
 
 .salary-h {
+  color: #717B8A;
   margin: 1rem;
 }
 
@@ -831,7 +852,31 @@ hr:after {
 }
 
 @media(max-width: 1185px) {
-  
+  .user-name {
+    font-size: .85em;
+  }
+
+  .stats-nav-h {
+    margin-left: 2.5rem;
+  }
+
+  .job-summary {
+    margin: 1em;
+  }
+
+  .contact-container {
+    margin-top: 1em;
+  }
+
+  .facebook-box, 
+  .twitter-box, 
+  .linkedin-box {
+    width: 17em;
+  }
+
+  .embed-link, .email-address {
+    font-size: .75em;
+  }
 }
 
 
