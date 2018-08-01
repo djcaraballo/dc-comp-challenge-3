@@ -375,6 +375,7 @@ main {
   cursor: pointer;
 }
 
+/*CIRCLE GRAPHS STYLING*/
 .job-circle-graphs {
   display: grid;
   grid-column: 1/2;
@@ -386,6 +387,12 @@ main {
   align-items: center;
   display: flex;
   grid-row: 1/2;
+  justify-content: center;
+}
+
+.circle-graphs-img {
+  height: 10em;
+  width: 30em;
 }
 
 .totals-button {
@@ -411,39 +418,7 @@ main {
   margin: .5rem
 }
 
-.circular-chart {
-  background-image: url(images/circle-regular.svg);
-  background-repeat: no-repeat;
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 10em;
-}
-
-.circle-stroke {
-  animation: progress 1s ease-out forwards;
-  fill: none;
-  stroke-linecap: round;
-  stroke-width: 3.7;
-}
-.circle-stroke-1 {
-  stroke: #67B8BF;
-}
-
-.circle-stroke-2 {
-  stroke: #48A3F3;
-}
-
-.circle-stroke-3 {
-  stroke: #A46EAB;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
+/*BAR GRAPH STYLING*/
 .bar-graph-container {
   align-items: center;
   display: flex;
@@ -478,6 +453,7 @@ hr:after {
   top: -13px;
 }
 
+/*JOB SUMMARY BOX STYLING*/
 .content-wrapper {
   display: grid;
   grid-auto-flow: row;
@@ -761,17 +737,18 @@ hr:after {
 
 .embed-link {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto;
 }
 
 .embed-link,
 .email-address {
   align-items: center;
+  background-color: #FFF;
   color: #717A89;
   display: flex;
   height: 3em;
-  width: 20em;
+  width: 18.9em;
 }
 
 .link,
@@ -787,7 +764,9 @@ hr:after {
   color: #FFF;
   font-size: .9em;
   grid-column: 2/3;
+  height: 1.4em;
   padding: 1em;
+  width: 3em;
 }
 
 
@@ -806,6 +785,53 @@ hr:after {
 
 .job-upload-box {
   grid-row: 4/5;
+}
+
+/*MEDIA QUERIES*/
+@media(max-width: 1320px) {
+  .job-summ-p7 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .facebook-box, 
+  .twitter-box, 
+  .linkedin-box {
+    height: 3em;
+    width: 18em;
+}
+
+@media(max-width: 1265px) {
+  .circle-graphs-img {
+    height: 9em;
+    width: 27em;
+  }
+
+  .job-circle-graphs {
+    grid-template-rows: 11.5em 3em;
+  }
+
+  .bar-graph {
+    height: 13em;
+    width: 23em;
+  }
+
+  .tot-btn-container {
+    height: 1.5em;
+  }
+
+  .link, 
+  .script-tag {
+    padding: 1em .5em;
+  }
+
+  .embed-link, .email-address {
+    width: 18em;
+  }
+}
+
+@media(max-width: 1185px) {
+  
 }
 
 
