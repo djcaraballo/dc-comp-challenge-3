@@ -100,6 +100,7 @@ i {
 .admin-check:hover {
   background-color: #313948;
   color: #FFF;
+  cursor: pointer;
 }
 
 .home-nav,
@@ -174,9 +175,10 @@ i {
 }
 
 main {
+  background-color: #ECF1F5;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 4em 8em 16em auto;
+  grid-template-rows: 4em 8em 17em auto;
 }
 
 /*USER INTERACTIVE NAVIGATION STYLING*/
@@ -200,6 +202,8 @@ main {
 .waffle-nav:hover {
   background-color: #48A3F3;
   color: white;
+  cursor: pointer;
+
 }
 
 .menu-nav {
@@ -344,7 +348,7 @@ main {
   grid-auto-flow: row;
   grid-row: 3/4;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5em 15em 5em 5em;
+  grid-template-rows: 2em 15em 2em;
 }
 
 .job-stats-nav {
@@ -355,28 +359,61 @@ main {
   padding-left: 2.75rem;
 }
 
+.stats-nav-start {
+  color: #8C95A4;
+}
+
 .stats-nav-h {
+  color: #8C95A4;
   margin-left: 3.15rem;
 }
 
+.stats-nav-start:hover,
+.stats-nav-h:hover {
+  border-bottom: 2px solid #48A3F3;
+  color: #4E515D;
+  cursor: pointer;
+}
+
 .job-circle-graphs {
-  grid-column: 2/3;
+  display: grid;
+  grid-column: 1/2;
+  grid-template-columns: auto;
+  grid-template-rows: 12.15em 3em;
 }
 
-.circle-graph-1 {
-
+.circle-graph-container {
+  align-items: center;
+  display: flex;
+  grid-row: 1/2;
 }
 
-.circle-graph-2 {
-
+.totals-button {
+  align-items: center;
+  display: flex;
+  grid-row: 2/3;
+  justify-content: center;
 }
 
-.circle-graph-3 {
+.tot-btn-container {
+  align-items: center;
+  background-color: #FFF;
+  border: 2px solid #D4DBE2;
+  border-radius: 1.25em;
+  color: #7A8391;
+  display: flex;
+  height: 1.75em;
+  justify-content: center;
+  width: 11em;
+}
 
+.totals-button-circ {
+  margin: .5rem
 }
 
 .circular-chart {
   background-image: url(images/circle-regular.svg);
+  background-repeat: no-repeat;
   display: block;
   margin: 10px auto;
   max-width: 80%;
@@ -407,15 +444,127 @@ main {
   }
 }
 
+.bar-graph-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .bar-graph {
-  height: 10em;
-  width: 15em;
+  height: 15em;
+  width: 25em;
+}
+
+.line-icon-container {
+  display: flex;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+/*hr {
+  color: #D3DAE1;
+  border: 0;
+  border-bottom: 1px solid #D3DAE1;
+  border-top: 1px solid #000;
+  height: 0;
+}*/
+ 
+ hr {
+    border: none;
+    border-top: 3px solid #D3DAE1;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: .fa-chevron-circle-up;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 .content-wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row: 5/6;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+}
+
+.job-summary {
+  display: grid;
+  grid-column: 1/2;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 3em) 9em 3em 3em;
+
+}
+
+.job-summ-h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.edit-button {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.job-summ-h2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.job-summ-p2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.job-summ-h3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.job-summ-p3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.job-summ-h4 {
+  grid-column: 
   grid-row: 4/5;
 }
 
+.job-summ-h5 {
+  grid-column: 
+  grid-row: 5/6;
+}
+
+.job-summ-h6 {
+  grid-column: 
+  grid-row: 6/7;
+}
+
+.job-summ-h7 {
+  grid-column: 
+  grid-row: 7/8;
+}
+
+.job-summ-h8 {
+  grid-column: 
+  grid-row: 8/9;
+}
+
+.job-summ-h9 {
+  grid-column: 
+  grid-row: 9/10;
+}
+
+.social-media-links {
+
+}
 
 .hiring-lead-image {
   -webkit-border-radius: 5em;
