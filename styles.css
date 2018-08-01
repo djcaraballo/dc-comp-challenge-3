@@ -460,14 +460,6 @@ main {
   grid-column: 1/3;
   grid-row: 3/4;
 }
-
-/*hr {
-  color: #D3DAE1;
-  border: 0;
-  border-bottom: 1px solid #D3DAE1;
-  border-top: 1px solid #000;
-  height: 0;
-}*/
  
 hr {
   border: none;
@@ -504,10 +496,12 @@ hr:after {
 }
 
 .job-summary-h {
+  color: #7D8A9E;
   margin: 1.5em;
 }
 
 .summ-p {
+  color: #717b8A;
   margin: 1em;
 }
 
@@ -518,6 +512,10 @@ hr:after {
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 1em;
+}
+
+.job-summ-h1 {
+  color: #FFF;
 }
 
 .summary-box-1-2 {
@@ -673,10 +671,6 @@ hr:after {
   margin: 1rem;
 }
 
-.social-media-links {
-
-}
-
 .hiring-lead-image {
   -webkit-border-radius: 5em;
   -moz-border-radius: 5em;
@@ -698,7 +692,7 @@ hr:after {
   display: grid;
   grid-row: 1/2;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 4em);
 }
 
 .fa-facebook-square,
@@ -708,35 +702,98 @@ hr:after {
   margin-left: 2em;
 }
 
-.facebook-box {
+.facebook-box,
+.twitter-box,
+.linkedin-box {
   align-items: center;
-  background-color: #5171BC;
   color: #FFF;
   display: flex;
-  grid-row: 1/2;
   height: 3em;
-  /*justify-content: center;*/
   width: 20em;
+}
+
+.facebook-box {
+  background-color: #5171BC;
+  grid-row: 1/2;
 }
 
 .twitter-box {
-  align-items: center;
   background-color: #48A9E9;
-  color: #FFF;
-  display: flex;
   grid-row: 2/3;
+}
+
+.linkedin-box {
+  background-color: #3581B8;
+  grid-row: 3/4;
+}
+
+.embed-job-box,
+.button-widget-box,
+.job-upload-box {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 4em);
+}
+
+.contact-h-box {
+  color: #5B6677;
+  display: flex;
+  align-items: center;
+}
+
+.fa-globe-americas,
+.fa-window-maximize,
+.fa-file-upload {
+  margin-right: .5em;
+  margin-left: 0;
+}
+
+.embed-p {
+  font-size: .9em;
+  margin: 0;
+}
+
+.link,
+.script-tag,
+.email-address {
+  color: #717A89;
+}
+
+.embed-link {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+}
+
+.embed-link,
+.email-address {
+  align-items: center;
+  color: #717A89;
+  display: flex;
   height: 3em;
   width: 20em;
 }
 
-.linkedin-box {
-  align-items: center;
-  background-color: #3581B8;
+.link,
+.script-tag {
+  background-color: #FFF;
+  font-size: .9em;
+  grid-column: 1/2;
+  padding: 1em;
+}
+
+.copy-p {
+  background-color: #67B8BF;
   color: #FFF;
-  display: flex;
-  grid-row: 3/4;
-  height: 3em;
-  width: 20em;
+  font-size: .9em;
+  grid-column: 2/3;
+  padding: 1em;
+}
+
+
+.contact-p-box {
+  color: #8A929F;
+  padding-right: 3em;
 }
 
 .embed-job-box {
