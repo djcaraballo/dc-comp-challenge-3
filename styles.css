@@ -90,13 +90,6 @@ i {
   grid-row: 2/3;*/
 }
 
-.sidebar-nav-icon:hover,
-.alt-nav-icon-box:hover {
-  background-color: #313948;
-  color: #FFF;
-  cursor: pointer;
-}
-
 .home-nav,
 .users-nav,
 .admin-check {
@@ -255,19 +248,22 @@ main {
   margin: 0;
 }
 
+.user-add-nav,
+.cal-add-nav,
+.waffle-nav {
+  justify-content: center;  
+}
+
 .user-add-nav {
   grid-column: 3/4;
-  justify-content: center;
 }
 
 .cal-add-nav {
   grid-column: 4/5;
-  justify-content: center;
 }
 
 .waffle-nav {
   grid-column: 5/6;
-  justify-content: center;
 }
 
 /*JOB STATUS NAVIGATION STYLING*/
@@ -390,13 +386,6 @@ main {
   margin-left: 3.15rem;
 }
 
-.stats-nav-start:hover,
-.stats-nav-h:hover {
-  border-bottom: 2px solid #48A3F3;
-  color: #4E515D;
-  cursor: pointer;
-}
-
 /*CIRCLE GRAPHS STYLING*/
 .job-circle-graphs {
   display: grid;
@@ -502,13 +491,17 @@ hr:after {
   color: #717B8A;
 }
 
-.summary-box-1-1 {
+.job-summary-box {
   align-items: center;
-  background-color: #717D93;
+  border-bottom: 2px solid #EFF2F5;
   display: flex;
+  padding-left: 1em;
+}
+
+.summary-box-1-1 {
+  background-color: #717D93;
   grid-column: 1/2;
   grid-row: 1/2;
-  padding-left: 1em;
 }
 
 .job-summ-h1 {
@@ -516,7 +509,6 @@ hr:after {
 }
 
 .summary-box-1-2 {
-  align-items: center;
   background-color: #717D93;
   display: flex;
   grid-column: 2/3;
@@ -538,106 +530,71 @@ hr:after {
 }
 
 .summary-box-2-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 2/3;
-  padding-left: 1em;
 }
 
 .summary-box-2-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .summary-box-3-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 3/4;
-  padding-left: 1em;
 }
 
 .summary-box-3-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 3/4;
 }
 
 .summary-box-4-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 4/5;
-  padding-left: 1em;
 }
 
 .summary-box-4-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 4/5;
 }
 
 .summary-box-5-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2; 
   grid-row: 5/6;
-  padding-left: 1em;
 }
 
 .summary-box-5-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 5/6;
 }
 
 .summary-box-6-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 6/7;
-  padding-left: 1em;
 }
 
 .summary-box-6-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 6/7;
 }
 
 .summary-box-7-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 7/8;
-  padding-left: 1em;
 }
 
 .summary-box-7-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 7/8;
 }
 
 .summary-box-8-1 {
-  border-bottom: 2px solid #EFF2F5;
-  display: flex;
   grid-column: 1/2;
   grid-row: 8/9;
-  padding-left: 1em;
 }
 
 .summary-box-8-2 {
-  align-items: center;
-  border-bottom: 2px solid #EFF2F5;
   grid-column: 2/3;
   grid-row: 8/9;
 }
@@ -652,14 +609,11 @@ hr:after {
 }
 
 .summary-box-9-1 {
-  display: flex;
   grid-column: 1/2;
   grid-row: 9/10;
-  padding-left: 1em;
 }
 
 .summary-box-9-2 {
-  align-items: center;
   grid-column: 2/3;
   grid-row: 9/10;
 }
@@ -799,7 +753,6 @@ h3 {
   width: 3em;
 }
 
-
 .contact-p-box {
   color: #8A929F;
 }
@@ -815,6 +768,22 @@ h3 {
 .job-upload-box {
   grid-row: 4/5;
 }
+
+/*HOVER STATES*/
+.sidebar-nav-icon:hover,
+.alt-nav-icon-box:hover {
+  background-color: #313948;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.stats-nav-start:hover,
+.stats-nav-h:hover {
+  border-bottom: 2px solid #48A3F3;
+  color: #4E515D;
+  cursor: pointer;
+}
+
 
 /*MEDIA QUERIES*/
 @media(max-width: 1320px) {
